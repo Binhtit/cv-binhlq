@@ -1,3 +1,5 @@
+let cv = {};
+
 (function () {
     "use strict";
   
@@ -51,17 +53,29 @@
      
       TweenMax.fromTo('.cont_back_azul',1.5,{left:-200},{left:0,delay:1});
      
-      TweenMax.fromTo('.text_1',0.5,{scale:0},{scale:1,delay:1.5});
+      // TweenMax.fromTo('.text_1',0.5,{scale:0},{scale:1,delay:1.5});
        
-      TweenMax.fromTo('.text_phone',0.5,{scale:0},{scale:1,delay:1.7});
+      // TweenMax.fromTo('.text_phone',0.5,{scale:0},{scale:1,delay:1.7});
 
-      TweenMax.fromTo('.text_email',0.5,{scale:0},{scale:1,delay:1.9});
+      // TweenMax.fromTo('.text_email',0.5,{scale:0},{scale:1,delay:1.9});
      
      }
      init();
      
   })();
 
+  $(document).ready(function () {
+    cv.init();
+  });
+
   
+  cv.init = () => {
+    cv.getPhone();
+  };
+
+  cv.getPhone = () => {
+    let phone = $('.js-phone').text();
+    $('.js-phone').attr("href", `tel:${phone}`);
+  };
   
   

@@ -15,10 +15,10 @@ gulp.task('clean', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('sass/**/*.scss', (done) => {
+    gulp.watch('scss/*.scss', (done) => {
         gulp.series(['clean', 'styles'])(done);
     });
 });
 
-gulp.task('default', gulp.series(['clean', 'styles','watch']));
+gulp.task('default', gulp.series('watch'));
 
