@@ -20,5 +20,5 @@ gulp.task('watch', () => {
     });
 });
 
-gulp.task('default', gulp.series('watch'));
+gulp.task('default', gulp.series('clean','styles','watch'));
 

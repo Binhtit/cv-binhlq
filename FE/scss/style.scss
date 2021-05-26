@@ -66,12 +66,25 @@
           padding-bottom: 15px;
         }
   
-        .card-time {
-          position: absolute;
-          transition: 0.7s;
-          opacity: 0;
-          top: -35px;
-          left: 0;
+        .card{
+          &-time {
+            position: absolute;
+            transition: 0.7s;
+            opacity: 0;
+            top: -35px;
+            left: 0;
+          }
+          &-edit{
+            cursor: pointer;
+            position: absolute;
+            right: 5px;
+            top: 0px;
+            font-size: 30px;
+            color: var(--white);
+          }
+          :hover{
+            color: var(--codeclass);
+          }
         }
   
         &::after {
@@ -393,12 +406,10 @@
     > {
       .text{
         &_job {
-          font-family: 'Share';
           color: #43A3BD;
-    
-          /* border-top:1px solid #ddd; */
-          width: 200px;
-          padding: 10px;
+          width: max-content;
+          padding: 10px 0 0 10px;
+          margin: 0;
         }
 
         &_name {
@@ -412,11 +423,11 @@
           /* margin: 5px auto; */
           /* border-bottom:1px solid #ddd; */
           /* border-top:1px solid #ddd; */
-          width: 250px;         
+          width: max-content;         
         }
         
         &_phone, &_email {
-          padding: 10px;
+          padding: 5px 10px;
           color: #B2A388;
           font-family: 'Goldman', cursive;
           color: var(--white);
@@ -517,6 +528,7 @@
         position: relative;
       }
     }
+
     .user {
       &-avatar {
         background: antiquewhite;
@@ -525,8 +537,9 @@
         border-radius: 50%;
         margin: 10px auto;
       }
+
       &-name {
-        display: flex;
+        width: max-content;
         color: white;
         font-family: 'Goldman', cursive;
         color: var(--white);
@@ -538,11 +551,14 @@
         text-transform: uppercase;
         transition: left 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.15s cubic-bezier(0.6, -0.28, 0.735, 0.045);
        
-        
         a {
           margin-left: 10px;
         }
       }
+
+      &-logout{
+        margin-top: 12px;
+       }
     }
     
   
@@ -629,6 +645,7 @@
           align-items: center;
   
           a {
+            width: max-content;
             font-family: 'Goldman', cursive;
             text-transform: uppercase;
             color: white;

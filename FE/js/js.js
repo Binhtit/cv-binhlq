@@ -10,6 +10,17 @@ let cv = {};
     // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
     function isElementInViewport(el) {
       var rect = el.getBoundingClientRect();
+      //if conten in card have many values
+      if (rect.height >= window.innerHeight ) {
+        return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.top <= 
+          (window.innerHeight || document.documentElement.clientHeight)/2 &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
       return (
         rect.top >= 0 &&
         rect.left >= 0 &&
@@ -20,6 +31,8 @@ let cv = {};
     }
   
     function callbackFunc() {
+      
+      console.log(items[0].getBoundingClientRect());
       for (var i = 0; i < items.length; i++) {
         if (isElementInViewport(items[i])) {
           items[i].classList.add("in-view");

@@ -59,6 +59,15 @@ h1 {
         opacity: 0;
         top: -35px;
         left: 0; }
+      .timeline ul li .card-edit {
+        cursor: pointer;
+        position: absolute;
+        right: 5px;
+        top: 0px;
+        font-size: 30px;
+        color: var(--white); }
+      .timeline ul li .card :hover {
+        color: var(--codeclass); }
       .timeline ul li::after {
         content: "";
         position: absolute;
@@ -279,11 +288,10 @@ body {
   left: 335px;
   font-family: 'Goldman', cursive; }
   .cont_text_absoluto_centro > .text_job {
-    font-family: 'Share';
     color: #43A3BD;
-    /* border-top:1px solid #ddd; */
-    width: 200px;
-    padding: 10px; }
+    width: max-content;
+    padding: 10px 0 0 10px;
+    margin: 0; }
   .cont_text_absoluto_centro > .text_name {
     letter-spacing: 5px;
     font-weight: 400;
@@ -293,9 +301,9 @@ body {
     /* margin: 5px auto; */
     /* border-bottom:1px solid #ddd; */
     /* border-top:1px solid #ddd; */
-    width: 250px; }
+    width: max-content; }
   .cont_text_absoluto_centro > .text_phone, .cont_text_absoluto_centro > .text_email {
-    padding: 10px;
+    padding: 5px 10px;
     color: #B2A388;
     font-family: 'Goldman', cursive;
     color: var(--white); }
@@ -368,7 +376,7 @@ header#mainHeader {
     border-radius: 50%;
     margin: 10px auto; }
   header#mainHeader .user-name {
-    display: flex;
+    width: max-content;
     color: white;
     font-family: 'Goldman', cursive;
     color: var(--white);
@@ -381,6 +389,8 @@ header#mainHeader {
     transition: left 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.15s cubic-bezier(0.6, -0.28, 0.735, 0.045); }
     header#mainHeader .user-name a {
       margin-left: 10px; }
+  header#mainHeader .user-logout {
+    margin-top: 12px; }
   header#mainHeader nav:after {
     content: ' ';
     background-color: #3a4151;
@@ -443,6 +453,7 @@ header#mainHeader {
       display: flex;
       align-items: center; }
       header#mainHeader nav ul li a {
+        width: max-content;
         font-family: 'Goldman', cursive;
         text-transform: uppercase;
         color: white;
