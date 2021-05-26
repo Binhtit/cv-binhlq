@@ -1,6 +1,25 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+body {
+  font-family: 'Source Code Pro', monospace; }
+  body a {
+    text-decoration: none; }
+
+/* ATOM
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .cl--white {
   color: var(--white) !important; }
+
+.cl--tear {
+  color: var(--tear) !important; }
 
 /* ROOT
   –––––––––––––––––––––––––––––––––––––––––––––––––– */

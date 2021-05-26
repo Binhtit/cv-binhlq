@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link href="../css/common-header.css" media="screen" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="banner" id="mainHeader" role="banner">
+    <nav role="navigation">
+        <div class="top-header">
+            <div class="navBurger">
+                <div class="burger"></div>
+            </div>
+        </div>
+        <div class="user">
+            <div class="user-avatar">
+                <img src="" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            </div>
+            <div class="user-name">
+                <span>Hi </span>
+                <a class="cl--white" href="#">ADMIN</a>
+                <div class="user-logout">
+                    <button class="btn btn-outline-warning btn-sm">Log Out</button>
+                </div>
+            </div>
+        </div>
+        <ul id="menu-vertical-menu" class="nav">
+            <li><a href="#">My CV</a></li>
+            <li><a href="#">Create CV</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Sign up</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2 id="heading">Sign Up Your User Account</h2>
+                    <p>Fill all form field to go to next step</p>
+                    <i class="cl--tear">(Don't worry it'll be quick)</i>
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active" id="account"><strong>Account</strong></li>
+                            <li id="personal"><strong>Personal</strong></li>
+                            <li id="validate"><strong>Validate</strong></li>
+                            <li id="confirm"><strong>Finish</strong></li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div> <br>
+                        <!-- fieldsets -->
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Account Information:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 1 - 4</h2>
+                                    </div>
+                                </div>
+                                <label class="fieldlabels">Email: *</label>
+                                <input type="email" name="email" placeholder="Email Id" />
+                                <label class="fieldlabels">Username: *</label>
+                                <input type="text" name="uname" placeholder="UserName" />
+                                <label class="fieldlabels">Password: *</label>
+                                <input type="password" name="pwd" placeholder="Password" />
+                                <label class="fieldlabels">Confirm Password: *</label>
+                                <input type="password" name="cpwd" placeholder="Confirm Password" />
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Personal Information:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 2 - 4</h2>
+                                    </div>
+                                </div> 
+                                <label class="fieldlabels">First Name: *</label> <input type="text" name="fname" placeholder="First Name" /> <label class="fieldlabels">Last Name: *</label> <input type="text" name="lname" placeholder="Last Name" />
+                                <label class="fieldlabels">Contact No.: *</label> <input type="text" name="phno" placeholder="Contact No." /> <label class="fieldlabels">Alternate Contact No.: *</label> <input type="text" name="phno_2" placeholder="Alternate Contact No." />
+                            </div> 
+                            <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Account verification:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 3 - 4</h2>
+                                    </div>
+                                </div>
+
+                                <label class="fieldlabels">Please enter the code sent to your email: </label> 
+                                <input type="text" name="mailCode"> 
+                            </div> 
+                            <input type="button" name="next" class="next action-button" value="Submit" /> 
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Finish:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 4 - 4</h2>
+                                    </div>
+                                </div> <br><br>
+                                <h2 class="purple-text text-center"><strong>SUCCESS!</strong></h2> <br>
+                                <div class="row justify-content-center">
+                                    <div class="col-3 success">
+                                      <span class="fit-image text-success"> </span>
+                                    </div>
+                                </div> <br><br>
+                                <div class="row justify-content-center">
+                                    <div class="col-7 text-center">
+                                        <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/sign-up.js"></script>
+</body>
+
+</html>
