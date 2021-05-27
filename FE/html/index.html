@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link href="../css/common-header.css" media="screen" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header class="banner" id="mainHeader" role="banner">
+        <nav role="navigation">
+            <div class="top-header">
+                <div class="navBurger">
+                    <div class="burger"></div>
+                </div>
+            </div>
+            <div class="user">
+                <div class="user-avatar">
+                    <img src="" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                </div>
+                <div class="user-name">
+                    <span>Hi </span>
+                    <a class="cl--white" href="#">ADMIN</a>
+                    <div class="user-logout">
+                        <button class="btn btn-outline-warning btn-sm">Log Out</button>
+                    </div>
+                </div>
+            </div>
+            <ul id="menu-vertical-menu" class="nav">
+                <li class="nav-mycv"><a  href="#">My CV</a></li>
+                <li class="nav-createcv"><a  href="#">Create CV</a></li>
+                <li class="nav-signin js-signin"><a>Sign in</a></li>
+                <li class="nav-signup"><a  href="#">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <div class="animated-bar"></div>
+     
+        <div class="slide slide-a">
+           <div class="slide-content">
+              <p class="slide-a-child">Xin chào!</p>
+              <h1 class="slide-a-child">Tôi là Bình</h1>
+              <p class="slide-a-child">Tôi là một web developer</p>
+           </div>
+        </div>
+     
+        <div class="slide slide-b">
+           <div class="slide-content">
+              <h2 class="slide-b-child">Website này tạo ra nhằm</h2>
+              <p class="slide-b-child">Giúp các bạn có một CV online thật đẹp mắt :)</p>
+              <p class="slide-b-child">và thay thế file CV của bạn bằng 1 đường link.</p>
+           </div>
+        </div>
+     
+        <div class="slide slide-c">
+           <div class="slide-content">
+              <h2 class="slide-c-child">Dễ dàng và nhanh chóng!</h2>
+              <ul>
+                 <li class="slide-c-child"><p>Đăng nhập</p></li>
+                 <li class="slide-c-child"><p>Tạo CV</p></li>
+                 <li class="slide-c-child"><p>Lấy link CV</p></li>
+                 <li class="slide-c-child"><p>Quản lý CV and more.</p></li>
+              </ul>
+           </div>
+        </div>
+     
+        <div class="slide slide-d">
+           <div class="slide-content">
+              <h2 class="slide-d-child">DÙNG THỬ NGAY NÀO!</h2>
+              <!-- <p class="slide-d-child">You can check me on </p> -->
+              <button class="slide-d-child replay">Đăng Ký</button>
+           </div>
+        </div>
+     
+     </div>
+
+    <!-- Modal login -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="login-box">
+                <h2>MEMBER LOGIN</h2>
+                <form>
+                  <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                  </div>
+                  <div class="login-box--action">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Submit
+                      </a>
+                      <div>
+                        <button class="btn btn-secondary btn-close" data-dismiss="modal"></button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+        </div>
+        </div>
+    </div>
+
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="../js/index.js"></script>
+</body>
+</html>

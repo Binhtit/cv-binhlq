@@ -11,7 +11,7 @@ let cv = {};
     function isElementInViewport(el) {
       var rect = el.getBoundingClientRect();
       //if conten in card have many values
-      if (rect.height >= window.innerHeight ) {
+      if (rect.height >= window.innerHeight/2 ) {
         return (
         rect.top >= 0 &&
         rect.left >= 0 &&
